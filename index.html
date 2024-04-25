@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login& Signup</title>
+</head>
+<body>
+   <div class="container">
+ <div class="formbox">
+    <div class="togglebox">
+        <div id="btn"></div>
+        <button type="button" class="toggleBtn" onclick="login()">Login</button>
+        <button type="button" class="toggleBtn" onclick="register()">Register</button>
+    </div>
+        <div class="user">
+            <img src="./Images/user.avif" alt="">
+        </div>
+        <form id="login" class="inputItem">
+            <input type="text" class="inputField" placeholder="User name" required>
+            <input type="text" class="inputField" placeholder="Password" required>
+           
+        <button type="submit" class="submitBtnlog">Login</button>
+        <p class="forgot">Forgot password</p>
+        <p class="para"> Login with</p>
+        <div class="socialIcons">
+            <img src="Images/google-color-icon.png" alt="">
+            <img src="Images/facebook-round-color-icon.png" alt="">
+            <img src="Images/x-social-media-round-icon.png" alt="">
+        
+        </div>
+    
+    </form>
+
+        <form id="register" class="inputItem">
+            <input type="text" class="inputField" placeholder="User name" required>
+            <input type="email" class="inputField" placeholder="Email address" required>
+            <input type="text" class="inputField" placeholder="Password" required>
+            <input type="checkbox" class="checkbox" > <span>I agree with terms and conditions</span>
+        <button type="submit" class="submitBtn">Register</button>
+        </form>
+   
+    </div>
+ 
+   </div> 
+   <script src="main.js"></script>
+</body>
+</html>
